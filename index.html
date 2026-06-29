@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Khushi Choudhary — MCA Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="logo">&lt;<span>MCA</span>Dev /&gt;</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Education</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="about">
+  <div class="hero-content">
+    <div class="hero-tag">Available for Opportunities</div>
+    <h1 class="fade-up">
+      MCA Full Stack<br/>
+      <span class="name">Java Developer</span>
+    </h1>
+    <p class="hero-sub fade-up">
+      Building scalable enterprise applications with <strong>Spring Boot</strong> + <strong>React</strong>.
+      Passionate about clean architecture, RESTful APIs, and delivering production-ready code.
+    </p>
+    <div class="hero-tech fade-up">
+      <span class="tech-pill java">☕ Java 17+</span>
+      <span class="tech-pill spring">🍃 Spring Boot</span>
+      <span class="tech-pill react">⚛️ React.js</span>
+      <span class="tech-pill db">🗄️ MySQL / PostgreSQL</span>
+      <span class="tech-pill">🐳 Docker</span>
+      <span class="tech-pill">☁️ AWS</span>
+    </div>
+    <div class="hero-btns fade-up">
+      <a href="#projects" class="btn-primary">🚀 View Projects</a>
+      <a href="#contact" class="btn-outline">📄 Download Resume</a>
+    </div>
+  </div>
+
+  <div class="hero-code">
+    <div class="code-line"><span class="ann">@RestController</span></div>
+    <div class="code-line"><span class="ann">@RequestMapping</span>(<span class="str">"/api/v1"</span>)</div>
+    <div class="code-line"><span class="kw">public class</span> <span class="cls">PortfolioController</span> {</div>
+    <div class="code-line">&nbsp;&nbsp;<span class="ann">@Autowired</span></div>
+    <div class="code-line">&nbsp;&nbsp;<span class="kw">private</span> <span class="cls">DeveloperService</span> service;</div>
+    <div class="code-line">&nbsp;</div>
+    <div class="code-line">&nbsp;&nbsp;<span class="ann">@GetMapping</span>(<span class="str">"/hire"</span>)</div>
+    <div class="code-line">&nbsp;&nbsp;<span class="kw">public</span> <span class="cls">ResponseEntity</span>&lt;<span class="cls">Developer</span>&gt;</div>
+    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">getDeveloper</span>() {</div>
+    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="cls">ResponseEntity</span></div>
+    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">ok</span>(service.<span class="fn">findBestFit</span>(</div>
+    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Full Stack"</span>));</div>
+    <div class="code-line">&nbsp;&nbsp;}</div>
+    <div class="code-line">}</div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-num">6+</div><div class="stat-lbl">Full Stack Projects</div></div>
+  <div class="stat-item"><div class="stat-num">5</div><div class="stat-lbl">Spring Boot APIs Built</div></div>
+  <div class="stat-item"><div class="stat-num">10+</div><div class="stat-lbl">Technologies Mastered</div></div>
+  <div class="stat-item"><div class="stat-num">MCA</div><div class="stat-lbl">Post Graduate Degree</div></div>
+</div>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="sec-label">// technical expertise</div>
+  <h2 class="sec-title">Skills & Technologies</h2>
+  <p class="sec-desc">Full stack capabilities from database design to pixel-perfect UI, with strong backend expertise in Java ecosystem.</p>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-card-icon">☕</div>
+      <h3>Backend — Java Ecosystem</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Java 17</span>
+        <span class="skill-tag">Spring Boot 3</span>
+        <span class="skill-tag">Spring Security</span>
+        <span class="skill-tag">Spring Data JPA</span>
+        <span class="skill-tag">Hibernate</span>
+        <span class="skill-tag">Maven / Gradle</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">JWT Auth</span>
+        <span class="skill-tag">Microservices</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">⚛️</div>
+      <h3>Frontend — Modern Web</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">React.js</span>
+        <span class="skill-tag">JavaScript ES6+</span>
+        <span class="skill-tag">HTML5 / CSS3</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Redux</span>
+        <span class="skill-tag">Axios</span>
+        <span class="skill-tag">Thymeleaf</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">🗄️</div>
+      <h3>Database & Storage</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Redis</span>
+        <span class="skill-tag">SQL Queries</span>
+        <span class="skill-tag">JPA / ORM</span>
+        <span class="skill-tag">Flyway</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">🛠️</div>
+      <h3>DevOps & Tools</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS EC2 / S3</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">IntelliJ IDEA</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">JUnit / Mockito</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="sec-label">// portfolio</div>
+  <h2 class="sec-title">Featured Projects</h2>
+  <p class="sec-desc">Production-quality full stack applications built with Java Spring Boot — exactly what top companies look for.</p>
+
+  <div class="highlight-band">
+    💡 <p><strong>Resume Tip:</strong> Each project below demonstrates real-world skills — JWT auth, microservices, REST APIs, and React frontends. These are the projects that get interviews at product companies.</p>
+  </div>
+
+  <!-- PROJECT 1 -->
+  <div class="project-hero">
+    <div class="project-badge featured">BEST FOR RESUME — E-Commerce Platform</div>
+    <h3>🛍️ ShopNest — Full Stack E-Commerce System</h3>
+    <p>A complete e-commerce platform with product catalog, cart, orders, payments (Razorpay/Stripe integration), role-based admin panel, and real-time inventory.</p>
+    <div class="project-features">
+      <div class="pf"><div class="pf-icon">🔐</div><p>JWT Authentication</p><small>Spring Security + refresh tokens</small></div>
+      <div class="pf"><div class="pf-icon">💳</div><p>Payment Gateway</p><small>Razorpay / Stripe integration</small></div>
+      <div class="pf"><div class="pf-icon">📦</div><p>Admin Dashboard</p><small>Product & order management</small></div>
+      <div class="pf"><div class="pf-icon">📧</div><p>Email Notifications</p><small>JavaMail + order confirmations</small></div>
+      <div class="pf"><div class="pf-icon">🔍</div><p>Search & Filter</p><small>Category, price, rating filters</small></div>
+      <div class="pf"><div class="pf-icon">📊</div><p>Analytics API</p><small>Revenue & sales reports</small></div>
+    </div>
+    <div class="stack-chips">
+      <span class="chip java">Java 17</span>
+      <span class="chip spring">Spring Boot 3</span>
+      <span class="chip spring">Spring Security</span>
+      <span class="chip spring">Spring Data JPA</span>
+      <span class="chip react">React.js</span>
+      <span class="chip react">Redux Toolkit</span>
+      <span class="chip db">MySQL</span>
+      <span class="chip db">Redis (cache)</span>
+      <span class="chip other">Docker</span>
+      <span class="chip other">AWS S3</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project-hero">
+    <div class="project-badge featured">GREAT FOR FINTECH / BANKING ROLES</div>
+    <h3>🏦 FinFlow — Banking Management System</h3>
+    <p>A secure banking application with account management, fund transfers, transaction history, and loan modules. Perfect for BFSI sector jobs.</p>
+    <div class="project-features">
+      <div class="pf"><div class="pf-icon">💸</div><p>Fund Transfer</p><small>IMPS-style instant transfer</small></div>
+      <div class="pf"><div class="pf-icon">📋</div><p>Transaction Logs</p><small>Full audit trail with pagination</small></div>
+      <div class="pf"><div class="pf-icon">🏛️</div><p>Loan Module</p><small>Apply, approve, repay loans</small></div>
+      <div class="pf"><div class="pf-icon">🔒</div><p>2-Factor Auth</p><small>OTP via email/SMS</small></div>
+    </div>
+    <div class="stack-chips">
+      <span class="chip java">Java 17</span>
+      <span class="chip spring">Spring Boot</span>
+      <span class="chip spring">Spring Security</span>
+      <span class="chip spring">Spring Batch</span>
+      <span class="chip react">React.js</span>
+      <span class="chip db">PostgreSQL</span>
+      <span class="chip other">Docker</span>
+      <span class="chip other">Swagger/OpenAPI</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 3: StreamHub -->
+  <div class="project-hero">
+    <div class="project-badge featured">MCA FINAL YEAR PROJECT — YouTube Clone</div>
+    <h3>📹 StreamHub — Video Streaming Platform</h3>
+    <p>A full-stack YouTube clone with HLS video streaming, microservices architecture, real-time comments, and AWS S3 storage. Built with Spring Boot + React + Kafka.</p>
+    <div class="project-features">
+      <div class="pf"><div class="pf-icon">📤</div><p>Video Upload</p><small>Multipart upload to AWS S3</small></div>
+      <div class="pf"><div class="pf-icon">▶️</div><p>HLS Streaming</p><small>Adaptive 360p/720p/1080p</small></div>
+      <div class="pf"><div class="pf-icon">🔔</div><p>Subscriptions</p><small>Kafka-powered notifications</small></div>
+      <div class="pf"><div class="pf-icon">💬</div><p>Real-time Comments</p><small>WebSocket + MongoDB</small></div>
+    </div>
+    <div class="stack-chips">
+      <span class="chip java">Java 17</span>
+      <span class="chip spring">Spring Boot</span>
+      <span class="chip spring">Kafka</span>
+      <span class="chip react">React.js</span>
+      <span class="chip db">PostgreSQL</span>
+      <span class="chip db">MongoDB</span>
+      <span class="chip db">Redis</span>
+      <span class="chip other">AWS S3</span>
+      <span class="chip other">Docker</span>
+      <span class="chip other">FFmpeg</span>
+    </div>
+  </div>
+
+  <!-- OTHER PROJECTS GRID -->
+  <div class="projects-grid">
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <div class="proj-icon">🏥</div>
+        <div class="proj-type">Spring Boot + React<br/>Healthcare</div>
+      </div>
+      <h3>MediCare — Hospital Management</h3>
+      <p>Doctor appointment booking, patient records, prescription management, and billing. REST API with Swagger docs.</p>
+      <div class="stack-chips">
+        <span class="chip java">Java</span>
+        <span class="chip spring">Spring Boot</span>
+        <span class="chip react">React</span>
+        <span class="chip db">MySQL</span>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <div class="proj-icon">📚</div>
+        <div class="proj-type">Spring Boot + Thymeleaf<br/>EdTech</div>
+      </div>
+      <h3>LearnHub — Online Learning Platform</h3>
+      <p>Course creation, student enrollment, video streaming, quizzes, and progress tracking. JWT auth with instructor & student roles.</p>
+      <div class="stack-chips">
+        <span class="chip java">Java</span>
+        <span class="chip spring">Spring Boot</span>
+        <span class="chip react">React</span>
+        <span class="chip db">MongoDB</span>
+        <span class="chip other">AWS S3</span>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <div class="proj-icon">🔗</div>
+        <div class="proj-type">Microservices<br/>Architecture</div>
+      </div>
+      <h3>TaskFlow — Project Management API</h3>
+      <p>Jira-like task manager with projects, sprints, issues, and team collaboration. Microservices with service discovery (Eureka).</p>
+      <div class="stack-chips">
+        <span class="chip java">Java</span>
+        <span class="chip spring">Spring Cloud</span>
+        <span class="chip spring">Eureka</span>
+        <span class="chip db">PostgreSQL</span>
+        <span class="chip other">Docker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── EDUCATION ── -->
+<section id="experience">
+  <div class="sec-label">// background</div>
+  <h2 class="sec-title">Education & Training</h2>
+  <p class="sec-desc">Academic foundation in computer applications with hands-on project experience.</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date">2022 — 2024</div>
+      <h3>Master of Computer Applications (MCA)</h3>
+      <div class="org">🏫 Amity University Jharkhand • CGPA: 8.5 / 10</div>
+      <ul>
+        <li>Specialized in Full Stack Development & Cloud Computing</li>
+        <li>Major Project: StreamHub — YouTube Clone using Spring Boot + React</li>
+        <li>Coursework: DSA, DBMS, Software Engineering, Web Technologies</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--accent2)"></div>
+      <div class="tl-date">2019 — 2022</div>
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <div class="org">🏫 Amity University Jharkhand • CGPA: 8.2 / 10</div>
+      <ul>
+        <li>Core Java, Data Structures, Database Systems</li>
+        <li>Mini Project: Student Management System in Java + MySQL</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--accent3)"></div>
+      <div class="tl-date">2024</div>
+      <h3>Full Stack Java Developer Certification</h3>
+      <div class="org">📜 Udemy / Coursera / NPTEL</div>
+      <ul>
+        <li>Spring Boot 3, Microservices, Docker, AWS</li>
+        <li>React.js with Redux and REST API integration</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="sec-label">// get in touch</div>
+  <h2 class="sec-title">Let's Work Together</h2>
+  <p class="sec-desc">Open to full-time, internship, and freelance opportunities. Response guaranteed within 24 hours.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>📬 Contact Details</h3>
+      <p>Looking for a Java Full Stack Developer who can hit the ground running? Let's connect.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:khushichoudhary12179@gmail.com">
+          <span class="icon">✉️</span> khushichoudhary12179@gmail.com
+        </a>
+        <a class="contact-link" href="https://linkedin.com/in/khushichoudhary" target="_blank">
+          <span class="icon">💼</span> LinkedIn Profile
+        </a>
+        <a class="contact-link" href="https://github.com/khushichoudhary" target="_blank">
+          <span class="icon">🐙</span> GitHub Portfolio
+        </a>
+        <a class="contact-link" href="#">
+          <span class="icon">📄</span> Download Resume (PDF)
+        </a>
+        <a class="contact-link" href="tel:+919999999999">
+          <span class="icon">📱</span> +91 99999 99999
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <input type="text" placeholder="Company / Role" />
+        <textarea placeholder="Tell me about the opportunity..."></textarea>
+        <button class="btn-primary" id="sendBtn" style="border:none;cursor:pointer;justify-content:center;">
+          🚀 Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="logo">&lt;<span>MCA</span>Dev /&gt;</div>
+  <p>Built with ❤️ by Khushi Choudhary — Amity University Jharkhand</p>
+  <p class="footer-copy">© 2024 · Java | Spring Boot | React</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
